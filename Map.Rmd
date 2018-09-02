@@ -1,0 +1,16 @@
+---
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+#September 2, 2018
+```{r, echo=FALSE, warning=FALSE}
+library(leaflet)
+m <- leaflet() %>%
+  addTiles()
+m <- m %>%
+  addMarkers(lat=40.742037, lng=-73.987563, popup = "Madison Square Park")
+m
+```
